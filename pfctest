@@ -9,3 +9,8 @@ score_ordi2 = 0
 options = ["pierre", "papier", "ciseaux"]
 
 while score_joueur < manches and score_ordi < manches:
+
+  options = ["pierre", "ciseaux"]
+
+  while score_joueur < manches and score_ordi < manches:
+    choix_joueur = input("Que jouez vous ? Tapez 'pierre', 'papier' ou 'ciseaux' ")

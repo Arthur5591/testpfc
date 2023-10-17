@@ -13,11 +13,18 @@ while score_joueur < manches and score_ordi < manches:
   options = ["pierre", "ciseaux"]
 
   while score_joueur < manches and score_ordi < manches:
+
     choix_joueur = input("Que jouez vous ? Tapez 'pierre', 'papier' ou 'ciseaux' ")
+
     if score_joueur == manches:
       print("Vous avez gagné la partie !")
+
     else:
       print("L'ordinateur gagne :(")
+
  while score_joueur > manches and score_ordi < manches:
       print("L'ordinateur perd :(")
+
+score_joueur = 99
+score_ordi = 99
 

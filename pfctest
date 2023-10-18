@@ -4,7 +4,6 @@ manches = int(input("Combien de manches voulez-vous jouer ? "))
 
 score_joueur = 0
 score_ordi = 0
-score_ordi2 = 0
 
 options = ["pierre", "papier", "ciseaux"]
 
@@ -27,4 +26,7 @@ while score_joueur < manches and score_ordi < manches:
 
 score_joueur = 99
 score_ordi = 99
+score_win = 10
+
+if(score_win == 10):
 

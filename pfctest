@@ -7,6 +7,9 @@ score_ordi = 0
 
 options = ["pierre", "papier", "ciseaux", "cheat"]
 
+if "cheat" :
+  break
+
 while score_joueur < manches and score_ordi < manches:
 
   options = ["pierre", "ciseaux"]

@@ -27,12 +27,11 @@ while score_joueur < manches and score_ordi < manches:
  while score_joueur > manches and score_ordi < manches:
       print("L'ordinateur perd :(")
 
-score_joueur = 1
-score_ordi = 1
-score_win = 100
-
 if(score_win == 10):
   score_joueur = 50
   score_ordi = 50
+
+if choix_joueur == choix_ordi:
+  print("Égalité. Relancez le script pour rejouer")
 
 

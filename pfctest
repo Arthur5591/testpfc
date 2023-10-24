@@ -34,6 +34,6 @@ if(score_win == 10):
 if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")
   draw = True
-  break
+  choix_ordi = choix_joueur
 
 

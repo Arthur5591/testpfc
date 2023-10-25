@@ -5,10 +5,7 @@ manches = int(input("Combien de manches voulez-vous jouer ? "))
 score_joueur = 0
 score_ordi = 0
 
-options = ["pierre", "papier", "ciseaux", "cheat"]
-
-if "cheat" :
-  break
+options = ["pierre", "papier", "ciseaux"]
 
 while score_joueur < manches and score_ordi < manches:
 
@@ -35,5 +32,9 @@ if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")
   draw = True
   choix_ordi = choix_joueur
+
+bot_in_action = True
+was_in_position = False
+startup_info = False
 
 

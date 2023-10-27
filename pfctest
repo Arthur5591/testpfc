@@ -2,8 +2,9 @@ import random
 
 manches = int(input("Combien de manches voulez-vous jouer ? "))
 
-score_joueur = 0
-score_ordi = 0
+score_joueur = 10
+score_ordi = 10
+score_win = 10
 
 options = ["pierre", "papier", "ciseaux"]
 
@@ -40,5 +41,6 @@ startup_info = False
 main_order = False
 stoploss_order = False
 takeprofit_order = False
+
 
 

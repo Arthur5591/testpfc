@@ -1,4 +1,6 @@
 import random
+import pandas
+import time
 
 manches = int(input("Combien de manches voulez-vous jouer ? "))
 
@@ -26,8 +28,8 @@ while score_joueur < manches and score_ordi < manches:
       print("L'ordinateur perd :(")
 
 if(score_win == 10):
-  score_joueur = 50
-  score_ordi = 50
+  score_joueur = 550
+  score_ordi = 550
 
 if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")

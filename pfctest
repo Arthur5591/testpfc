@@ -42,12 +42,12 @@ startup_info = False
 
 main_order = True
 stoploss_order = False
-takeprofit_order = True
+takeprofit_order = False
 stoploss_value = 5000
-stoploss_size = 10/100
+stoploss_size = 100/100
 position_value = stoploss_value/stoploss_size
 
-position_opening_next_candle_time = False
+position_opening_next_candle_time = True
 position_opening_next_candle_is_open = False
 
 stoploss_level_1 = True

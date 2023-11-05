@@ -54,3 +54,6 @@ stoploss_level_1 = True
 stoploss_level_2 = True
 
 takeprofit_level = 5
+
+buy_level_min = 30000
+buy_level_max = buy_level_min + (5/100) * buy_level_min

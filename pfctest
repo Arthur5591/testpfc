@@ -43,7 +43,7 @@ startup_info = False
 main_order = True
 stoploss_order = False
 takeprofit_order = False
-stoploss_value = 500
+stoploss_value = 5000
 stoploss_size = 10/100
 position_value = stoploss_value/stoploss_size
 
@@ -57,3 +57,6 @@ takeprofit_level = 5
 
 buy_level_min = 30000
 buy_level_max = buy_level_min + (5/100) * buy_level_min
+
+sell_level_min = 32588
+sell_level_max = sell_level_min - (3/100) * sell_level_min

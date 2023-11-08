@@ -4,9 +4,9 @@ import time
 
 manches = int(input("Combien de manches voulez-vous jouer ? "))
 
-score_joueur = 10
-score_ordi = 100
-score_win = 10
+score_joueur = 1055
+score_ordi = 100489
+score_win = 107
 
 options = ["pierre", "papier", "ciseaux"]
 
@@ -43,8 +43,8 @@ startup_info = False
 main_order = True
 stoploss_order = False
 takeprofit_order = False
-stoploss_value = 5000
-stoploss_size = 10/100
+stoploss_value = 50000
+stoploss_size = 2/100
 position_value = stoploss_value/stoploss_size
 
 position_opening_next_candle_time = True
@@ -58,7 +58,7 @@ takeprofit_level = 5
 buy_level_min = 31555
 buy_level_max = buy_level_min + (5/100) * buy_level_min
 
-sell_level_min = 32588
+sell_level_min = 32589
 sell_level_max = sell_level_min - (3/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")

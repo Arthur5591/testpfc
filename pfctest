@@ -4,9 +4,9 @@ import time
 
 manches = int(input("Combien de manches voulez-vous jouer ? "))
 
-score_joueur = 1055
-score_ordi = 100489
-score_win = 154
+score_joueur = 999
+score_ordi = 998
+score_win = 10
 
 options = ["pierre", "papier", "ciseaux"]
 
@@ -28,8 +28,8 @@ while score_joueur < manches and score_ordi < manches:
       print("L'ordinateur perd :(")
 
 if(score_win == 10):
-  score_joueur = 550
-  score_ordi = 5500
+  score_joueur = 51
+  score_ordi = 50
 
 if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")

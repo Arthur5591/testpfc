@@ -4,9 +4,9 @@ import time
 
 manches = int(input("Combien de manches voulez-vous jouer ? "))
 
-score_joueur = 999
-score_ordi = 998
-score_win = 10
+score_joueur = 2500
+score_ordi = 2000
+score_win = 10000
 
 options = ["pierre", "papier", "ciseaux"]
 
@@ -44,8 +44,8 @@ main_order = False
 stoploss_order = False
 takeprofit_order = False
 
-stoploss_value = 50000
-stoploss_size = 2/100
+stoploss_value = 25000
+stoploss_size = 1.25/100
 position_value = stoploss_value/stoploss_size
 
 position_opening_next_candle_time = True

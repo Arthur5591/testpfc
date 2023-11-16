@@ -54,6 +54,9 @@ position_opening_next_candle_is_open = True
 stoploss_level_1 = True
 stoploss_level_2 = True
 
+if(stoploss_level_1 == True):
+  print("SL activated")
+
 takeprofit_level = 50
 
 buy_level_min = 19550

@@ -6,7 +6,7 @@ manches = int(input("Combien de manches voulez-vous jouer ? "))
 
 score_joueur = 2500
 score_ordi = 2000
-score_win = 10000
+score_win = 10
 
 options = ["pierre", "papier", "ciseaux"]
 
@@ -28,8 +28,9 @@ while score_joueur < manches and score_ordi < manches:
       print("L'ordinateur perd :(")
 
 if(score_win == 10):
-  score_joueur = 51
-  score_ordi = 50
+
+  score_joueur = 11
+  score_ordi = 7
 
 if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")
@@ -60,10 +61,10 @@ if(stoploss_level_1 == True):
 takeprofit_level = 50
 
 buy_level_min = 19550
-buy_level_max = buy_level_min + (5/100) * buy_level_min
+buy_level_max = buy_level_min + (2.875/100) * buy_level_min
 
 sell_level_min = 33450
-sell_level_max = sell_level_min - (3/100) * sell_level_min
+sell_level_max = sell_level_min - (2.875/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
@@ -78,3 +79,4 @@ while (bot_in_action == True) :
         pandas_response_kline = pandas.DataFrame(response_kline)
 
         pandas_response_kline_close = pandas_response_kline["close"]
+        pandas_response_kline_high = pandas_response_kline["high"]

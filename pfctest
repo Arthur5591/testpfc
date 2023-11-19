@@ -4,11 +4,11 @@ import time
 
 manches = int(input("Combien de manches voulez-vous jouer ? "))
 
-score_joueur = 2500
-score_ordi = 2000
-score_win = 10
+score_joueur = 10000
+score_ordi = 20000
+score_win = 100000
 
-options = ["pierre", "papier", "ciseaux"]
+options = ["cailloux", "lettre", "coupe"]
 
 while score_joueur < manches and score_ordi < manches:
 
@@ -34,7 +34,7 @@ if(score_win == 10):
 
 if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")
-  draw = True
+  draw = False
   choix_ordi = choix_joueur
 
 bot_in_action = True
@@ -52,7 +52,7 @@ position_value = stoploss_value/stoploss_size
 position_opening_next_candle_time = True
 position_opening_next_candle_is_open = True
 
-stoploss_level_1 = True
+stoploss_level_1 = False
 stoploss_level_2 = True
 
 if(stoploss_level_1 == True):

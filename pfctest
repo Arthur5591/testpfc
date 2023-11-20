@@ -2,17 +2,17 @@ import random
 import pandas
 import time
 
-manches = int(input("Combien de manches voulez-vous jouer ? "))
+manches = int(input("Combien de manches voulez-vous jouer ? 1 ou 10 "))
 
-score_joueur = 10000
-score_ordi = 20000
-score_win = 100000
+score_joueur = 100000
+score_ordi = 10
+score_win = 80
 
 options = ["cailloux", "lettre", "coupe"]
 
 while score_joueur < manches and score_ordi < manches:
 
-  options = ["pierre", "ciseaux"]
+  options = ["cailloux", "coupe"]
 
   while score_joueur < manches and score_ordi < manches:
 

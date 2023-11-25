@@ -38,14 +38,14 @@ if choix_joueur == choix_ordi:
   choix_ordi = choix_joueur
 
 bot_in_action = True
-was_in_position = True
+was_in_position = False
 startup_info = False
 
 main_order = False
-stoploss_order = True
+stoploss_order = False
 takeprofit_order = False
 
-stoploss_value = 25000
+stoploss_value = 28744
 stoploss_size = 1.25/100
 position_value = stoploss_value/stoploss_size
 
@@ -58,11 +58,11 @@ stoploss_level_2 = False
 
 takeprofit_level = 35500
 
-buy_level_min = 16988
-buy_level_max = buy_level_min + (2.875/100) * buy_level_min
+buy_level_min = 16700
+buy_level_max = buy_level_min + (3.875/100) * buy_level_min
 
-sell_level_min = 33879
-sell_level_max = sell_level_min - (2.875/100) * sell_level_min
+sell_level_min = 39856
+sell_level_max = sell_level_min - (3.875/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
@@ -84,8 +84,6 @@ while (bot_in_action == True) :
         current_candle_high = pandas_response_kline_high[pandas_response_kline_high.count()-1]
         current_candle_low = pandas_response_kline_low[pandas_response_kline_low.count()-1]   
         pandas_response_kline_close = pandas_response_kline_close.drop(pandas_response_kline_close.count()-1)
-
-        #Calculation of bollinger up and down
 
         moving_average = pandas_response_kline_close.mean()
         standart_deviation = pandas_response_kline_close.std(ddof=0)

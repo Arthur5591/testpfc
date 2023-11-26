@@ -21,6 +21,9 @@ while score_joueur < manches and score_ordi < manches:
     if score_joueur == manches:
       print("Vous avez gagné la partie !")
 
+    if score_joueur != manches:
+      print("Vous avez gagné la partie ou pas à voir !")
+
     else:
       print("L'ordinateur gagne :(")
 
@@ -29,8 +32,8 @@ while score_joueur < manches and score_ordi < manches:
 
 if(score_win == 10):
 
-  score_joueur = 110
-  score_ordi = 70
+  score_joueur = 1000
+  score_ordi = 250
 
 if choix_joueur == choix_ordi:
   print("Égalité. Relancez le script pour rejouer")
@@ -45,7 +48,7 @@ main_order = False
 stoploss_order = False
 takeprofit_order = False
 
-stoploss_value = 28744
+stoploss_value = 28850
 stoploss_size = 1.25/100
 position_value = stoploss_value/stoploss_size
 

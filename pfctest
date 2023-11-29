@@ -21,6 +21,9 @@ while score_joueur < manches and score_ordi < manches:
     if score_joueur == manches:
       print("Vous avez gagné la partie !")
 
+    if score_joueur >= manches:
+      print("Trop fort continu !")
+
     if score_joueur != manches:
       print("Vous avez gagné la partie ou pas à voir !")
 

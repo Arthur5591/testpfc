@@ -58,11 +58,11 @@ position_value = stoploss_value/stoploss_size
 position_opening_next_candle_time = True
 position_opening_next_candle_is_open = True
 
-stoploss_level_1 = False
+stoploss_level_1 = True
 stoploss_level_2 = True
 
 stoploss_level_3 = True
-stoploss_level_4 = False
+stoploss_level_4 = True
 
   print("SL activated")
 
@@ -143,4 +143,10 @@ while (bot_in_action == True) :
                   
                   print(f"Niveau de vente maximum atteint ({time.strftime('%X')})\n")
                   bot_in_action = False
+
+               elif (order_number != 0 and main_order == False) :
+                
+                session.cancel_all_active_orders(symbol="BTCUSDT")
+                session.cancel_all_conditional_orders(symbol="BTCUSDT")
+                print(f"Ordre inconnu détecté, nettoyage de l'ordre ({time.strftime('%X')})\n")
     

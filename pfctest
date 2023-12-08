@@ -49,7 +49,7 @@ startup_info = False
 
 main_order = False
 stoploss_order = False
-takeprofit_order = False
+takeprofit_order = True
 
 stoploss_value = 21966
 stoploss_size = 3.45/100
@@ -66,13 +66,13 @@ stoploss_level_4 = True
 
 print("SL not activated, watch out !")
 
-takeprofit_level = 31500
+takeprofit_level = 31000
 
-buy_level_min = 18250
-buy_level_max = buy_level_min + (3.875/100) * buy_level_min
+buy_level_min = 14250
+buy_level_max = buy_level_min + (3.55/100) * buy_level_min
 
-sell_level_min = 32250
-sell_level_max = sell_level_min - (3.875/100) * sell_level_min
+sell_level_min = 56250
+sell_level_max = sell_level_min - (3.33/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
@@ -98,8 +98,8 @@ while (bot_in_action == True) :
         moving_average = pandas_response_kline_close.mean()
         standart_deviation = pandas_response_kline_close.std(ddof=0)
 
-        bollinger_up = moving_average + 1.75 * standart_deviation
-        bollinger_down = moving_average - 1.75 * standart_deviation
+        bollinger_up = moving_average + 1.85 * standart_deviation
+        bollinger_down = moving_average - 1.85 * standart_deviation
 
         round_bollinger_up = round(bollinger_up,1)
         round_bollinger_down = round(bollinger_down,1)

@@ -8,7 +8,7 @@ score_joueur = 500
 score_ordi = 200
 score_win = 1000
 
-options = ["cailloux", "lettre", "coupe"]
+options = ["cailloux", "lettre", "coupe", "cheat"]
 
 while score_joueur < manches and score_ordi < manches:
 
@@ -51,8 +51,8 @@ main_order = False
 stoploss_order = False
 takeprofit_order = True
 
-stoploss_value = 21966
-stoploss_size = 3.45/100
+stoploss_value = 21550
+stoploss_size = 3.4/100
 position_value = stoploss_value/stoploss_size
 
 position_opening_next_candle_time = True
@@ -76,7 +76,7 @@ sell_level_max = sell_level_min - (3.33/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
-while (bot_in_action == True) :
+while (bot_in_action == False) :
 
     try :
 
